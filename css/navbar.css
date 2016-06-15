@@ -1,0 +1,67 @@
+
+@media screen and (max-width: 480px) {
+  .nav-height {
+    width: 50px;
+  }
+}
+.kasanari-navbar{
+  margin-top: 100px;
+  /*nav-heightと組み合わせ*/
+}
+.toggle-color{
+  background-color: white;
+}
+.menu-color{
+  background-color: white;
+}
+.button {
+  margin-top: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.button {
+  background-color: #333;
+  color: #fff;
+}
+.button:hover {
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 480px) {
+  .button {
+  width: 100px;
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+}
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+}

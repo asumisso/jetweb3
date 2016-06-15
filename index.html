@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>J.E.T.WEB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+    $(function() {
+        // #で始まるアンカーをクリックした場合に処理
+        $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 400; // ミリ秒
+            // アンカーの値取得
+            var href = $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({
+                scrollTop: position
+            }, speed, 'swing');
+            return false;
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <!-- ヘッダーはじまり -->
+    <nav class="navbar navbar-default navbar-fixed-top menu-color">
+        <div class="navbar-header">
+            <!-- スマホ用はじまり -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+                <!-- メニューボタン         
+        data-toggle : ボタンを押したときにNavbarを開かせるために必要
+        data-target : 複数navbarを作成する場合、ボタンとナビを紐づけるために必要-->
+                <span class="sr-only">メニュー</span>
+                <!-- sr-onryは親切につけてるだけなので気にしなくてよし -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- スマホ用おわり -->
+        <div id="gnavi" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav toggle-color">
+                <a class="button" href="#">Top</a>
+                <a class="button" href="#about-fly">About</a>
+                <a class="button" href="#section-fly">Section</a>
+                <a class="button" href="#clubroom-fly">Clubroom</a>
+                <a class="button" href="#event-fly">Event</a>
+                <a class="button" href="#contact-fly">Contact</a>
+                <a class="button" href="#link-fly">Link</a>
+            </ul>
+        </div>
+    </nav>
+    <!-- ヘッダーおわり -->
+
+
+
+
+
+    
+    <!-- コンテンツたちがならぶよ。
+    navbar-fixed-topのせいで、かさなっちゃうから、一番上にはkasanari-navbarのcssあててるよー -->
+    <div class="container kasanari-navbar">
+        <div class="row">
+            <!-- メインコンテンツたちはじまり -->
+            <div class="col-md-12 col-xs-12 beniya">
+                <div>
+                    <h2>
+                    <p>WELCOME!!</p>
+                    <p>We are J.E.T.!</p>
+                    <p>画像はりたい</p></h2>
+                </div>
+                <!-- aboutはじまり -->
+                <div class="about bottom-block" id="about-fly">
+                    <h2><span class="icon-about">About</span></h2>
+                    <h4>What is J.E.T?</h4>
+                    <p>Joint English Theatricalsとは電気通信大学ESSと東京女子大学EDCの合同団体です。</p>
+                    <p>前期にはESSとEDCが、それぞれ演劇部と英会話部としての活動を行います。</p>
+                    <p>ここで互いの活動に顔を出しながら英語力や、演技の基礎を身に着けます。</p>
+                    <p>そして後期には、前期の活動の成果を生かすべく EDC、ESS合同で一つの本格的な英語劇を作り上げます。</p>
+                    <h4>English Drama Club(東京女子大学)</h4>
+                    <p>東京女子大学EDC(English Drama Club)は その名の通り英語劇を行うサークルです。</p>
+                    <ul>前期の活動</ul>
+                    <li>発声練習</li>
+                    <li>英語の台本を用いたミニ劇</li>
+                    <li>ミニゲーム</li>
+                    <p>英語が苦手でも大丈夫です。演劇にちょっとでも興味があれば、万事OK!!</p>
+                    <h4>English Speaking Society(電気通信大学)</h4>
+                    <p>ESSでは、英会話部としての活動を行っています。</p>
+                    <ul>前期の活動</ul>
+                    <li>英会話</li>
+                    <li>映画を見て英語を理解する</li>
+                    <li>TOEIC講座</li>
+                    <p>英語が得意な方・そうでない方どちらも大歓迎です。</p>
+                    <p>みんなで英語を好きになりましょう！</p>
+                </div>
+                <!-- aboutおわり -->
+                <!-- sectionはじまり -->
+                <div class="section bottom-block" id="section-fly">
+                    <h2><span class="icon-section">Section</span></h2>
+                    <h4>What is Section?</h4>
+                    <p>演劇は誰が作り上げていると思いますか？</p>
+                    <p>キャスト、がまず頭に浮かぶのではないでしょうか。</p>
+                    <p>でも、キャストだけじゃ演劇は成り立ちません。</p>
+                    <p>J.E.T.ではキャスト/セット/メイコス/サウンド/ライトに分かれ、本格的な劇を作り上げます。</p>
+                </div>
+                <!-- sectionおわり -->
+                <!-- crubroomはじまり -->
+                <div class="clubroom bottom-block" id="clubroom-fly">
+                    <h2><span class="icon-clubroom">clubroom</span></h2>
+                    <h4>Here is ESS Clubroom!</h4>
+                    <p>びふぉあがぞう。</p>
+                    <p>割と汚かった部室。</p>
+                    <p>がぞう。</p>
+                    <p>天才少女あすみちゃんが綺麗にした。</p>
+                    <h4>Here is TWCU Clubroom!</h4>
+                </div>
+                <!-- crubroomおわり -->
+                <!-- eventはじまり -->
+                <div class="event bottom-block" id="event-fly">
+                    <h2><span class="icon-event">Event</span></h2>
+                    <h4>Play,play,play!</h4>
+                    <p>英語劇をやる・英会話を学ぶというサークルですが、遊びも欠かせません。</p>
+                    <p>わたしたちJ.E.T.はOB・OG・現役関係なくみんな仲良しです。</p>
+                    <p>50年以上続いてるJET。上は50歳、下は18歳とみんな仲良しです。</p>
+                    <p>毎年行われている行事を紹介します。</p>
+                    <h4>BBQ</h4>
+                    <h4>合宿</h4>
+                    <h4>ハロウィンパーティー</h4>
+                    <h4>その他パーティーと称した遊び</h4>
+                </div>
+                <!-- eventおわり -->
+                <!-- contactはじまり -->
+                <div class="contact bottom-block" id="contact-fly">
+                    <h2><span class="icon-contact">contact</span></h2>
+                    <h4>電通大への行き方を教えて!</h4>
+                    <p>京王線調布駅北口を出て大通りをまっすぐ5分ほど行けば「電気通信大学」と書いた建物につきあたります。</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.850919370363!2d139.54187731525823!3d35.65604448020025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f0141c587615%3A0xe510b22e7670f20b!2z6Zu75rCX6YCa5L-h5aSn5a2m!5e0!3m2!1sja!2sjp!4v1465704900058" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <h4>東京女子大学から電気通信大学ってどうやっていくの？</h4>
+                    <p>東京女子大学は吉祥寺・西荻窪駅のあいだにあります。</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6932306715644!2d139.5897973153065!3d35.70916598018779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee69f91a48dd%3A0x458f1a7f981601e5!2z5p2x5Lqs5aWz5a2Q5aSn5a2m!5e0!3m2!1sja!2sjp!4v1465705071446" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p class="train">電車(30+20分)</p>
+                    <p>調布→（京王線新宿行き）→明大前→（京王井の頭線吉祥寺行き）→吉祥寺</p>
+                    <p>吉祥寺から徒歩２０分ほどでつきます</p>
+                    <p class="bus">バス(40+20分)</p>
+                    <p>駅前のバス乗り場の吉祥寺行きに乗ってください。</p>
+                    <p>吉祥寺駅からは電車同様に徒歩２０分ほどでつきます。</p>
+                    <h4>講演に観に行きたいんだけど...</h4>
+                    <p>是非お越しください！</p>
+                    <p>毎年、無料で行っております。</p>
+                    <p>公演は大体１１月下旬〜１２月中旬の土日のどちらかに一回行います。</p>
+                    <p>詳しい日程は<a href="http://twitter.com/jet_PR">JET公式twitter</a>にての確認が一番早いと思います。</p>
+                    <h4>調布祭(電通学祭)、VERA祭（東女学祭）では何かやりますか？</h4>
+                    <p>2013年:ロシアンたこやき(調布祭)</p>
+                    <p>2014年:豚汁(調布祭)</p>
+                    <p>2015年:劇「Wizerd of Oz」の公演(VERA祭)</p>
+                    <p>毎年、やることが変わります。</p>
+                    <p>JET期間とかぶっているため、通常では電通大の学祭の方で余裕があったらやるといった感じです。</p>
+                    <h4>その他もっと聞きたいことがある!!</h4>
+                    <p>入部申し込み、TOEIC講座受講申し込み、その他質問等ございましたら、お気軽にどうぞ！ </p>
+                    <p>PCメール1：joint.english.theatrical@gmail.com </p>
+                    <p>PCメール2：jet_ess_edc@yahoo.co.jp</p>
+                    <p>1つ目のGmailアドレスのほうが素早く対応できると思います。</p>
+                </div>
+                <!-- contactおわり -->
+                <!-- photoはじまり -->
+                <!-- linkはじまり -->
+                <div class="link bottom-block" id="link-fly">
+                    <h2><span class="icon-link">link</span></h2>
+                    <h4>ksdfjoawejfioawjeiofjaiiwoefjiwae</h4>
+                    <p>準備中dklsfじおあえjふぃおあjうぇいおfじゃうぇいおfじゃ$</p>
+                </div>
+                <!-- linkおわり -->
+            </div>
+            <!-- メインコンテンツたちおわり -->
+            <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4">
+                            <span class="twitter"></span>
+                            <h5>Twitter</h5>
+                            <p style="display:inline-block;">followお願いします!</p>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <span class="facebook"></span>
+                            <h5>Facebook</h5>
+                            <p style="display:inline-block;">イイネお願いします!</p>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <span class="mail"></span>
+                            <h5>Mail List</h5>
+                            <p style="display:inline-block;">OB・OG用メーリス</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/*メニュー*/
+.icon-about:before {
+    content: url(../images/about.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-about:after {
+    content: url(../images/about.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-section:before {
+    content: url(../images/section.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-section:after {
+    content: url(../images/section.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-event:before {
+    content: url(../images/event.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-event:after {
+    content: url(../images/event.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-clubroom:before {
+    content: url(../images/clubroom.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-clubroom:after {
+    content: url(../images/clubroom.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+.icon-photo:before {
+    content: url(../images/photo.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-photo:after {
+    content: url(../images/photo.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-contact:before {
+    content: url(../images/contact.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-contact:after {
+    content: url(../images/contact.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+.icon-photo:before {
+    content: url(../images/photo.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-photo:after {
+    content: url(../images/photo.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-link:before {
+    content: url(../images/link.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.icon-link:after {
+    content: url(../images/link.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+/*その他アイコン*/
+.bus:before {
+    content: url(../images/bus.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.bus:after {
+    content: url(../images/bus.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.train:before {
+    content: url(../images/train.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.train:after {
+    content: url(../images/train.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.twitter {
+    content: url(../images/twitter.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+}
+
+
+.facebook {
+    content: url(../images/facebook.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+}
+
+.mail {
+    content: url(../images/mail.png);
+    margin: 10px;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+}
